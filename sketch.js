@@ -36,6 +36,11 @@ function draw() {
   if (gameState === 1) {
     game.play();
   }
+
+  if (gameState === 2) {
+    game.showLeaderboard();
+    game.end();
+  }
 }
 
 function windowResized() {
